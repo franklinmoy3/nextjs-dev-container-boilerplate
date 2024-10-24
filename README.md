@@ -49,11 +49,9 @@ userns="keep-id"
 
 ### Project Struture
 
-This boilerplate mostly follows the
+This boilerplate follows the
 [recommended project structure](https://nextjs.org/docs/getting-started/project-structure)
-for Next.js applications. One minor difference is that application source code
-is placed inside of the [`src`](./src) subdirectory to help differentiate
-between application code and configuration files.
+for Next.js applications.
 
 ### Running the Server
 
