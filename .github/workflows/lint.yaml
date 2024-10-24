@@ -13,6 +13,8 @@ jobs:
         run: npm install --global pnpm@latest
       - name: Install dev dependencies
         run: pnpm install --dev
+      - name: Install dependencies
+        run: pnpm install
       - name: Format with Prettier
         run: pnpm format --write
       - name: Analyze with ESLint
