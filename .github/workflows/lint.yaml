@@ -1,0 +1,19 @@
+name: Lint and Format
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        run: npm install --global pnpm@latest
+      - name: Install dev dependencies
+        run: pnpm install --dev
+      - name: Format with Prettier
+        run: pnpm format --write
+      - name: Analyze with ESLint
+        run: pnpm lint
