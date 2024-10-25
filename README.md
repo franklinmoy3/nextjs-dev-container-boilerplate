@@ -73,9 +73,12 @@ you will need to create the following secrets in your GitHub repository.
 Go to your repository settings, click on `Secrets and Variables`, then `Actions`, then create the following
 
 - Name: `VERCEL_ORG_ID`
-  - Value should be  "**_Team ID_**" found in your Vercel team/org's general settings
+  - Value: The "**_Team ID_**" found in your Vercel team/org's general settings
 - Name: `VERCEL_PROJECT_ID`
-  - Value should be the "**_Project ID_**" found in your Vercel project's general settings
+  - Value: The "**_Project ID_**" found in your Vercel project's general settings
+- Name: `VERCEL_TOKEN`
+  - Value: The access token with permission to deploy projects within the Vercel team/org
+  - See [Vercel documentation](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token#creating-an-access-token) for more details
 
 ## Other Development Tools
 
