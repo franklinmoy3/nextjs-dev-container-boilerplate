@@ -1,10 +1,10 @@
-name: Lint and Format (Trunk)
+name: Lint (Trunk)
 on:
   push:
     branches:
       - main
 jobs:
-  lint-and-format:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,7 +14,5 @@ jobs:
         run: pnpm install --dev
       - name: Install dependencies
         run: pnpm install
-      - name: Format with Prettier (changes won't be committed)
-        run: pnpm format --write
       - name: Analyze with ESLint
         run: pnpm lint
